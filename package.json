@@ -1,0 +1,14 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "description": "front-end utk portal kesultanan",
+  "main": "index.js",
+  "scripts": {
+    "css-watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "haziq musa",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

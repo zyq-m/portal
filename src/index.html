@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Utama | Portal Kesultanan Terengganu</title>
+  </head>
+  <body
+    class="relative min-h-screen grid grid-rows-[auto_1fr_auto] bg-slate-50">
+    <header id="nav" class="fixed top-0 w-full px-4 py-2 z-20 text-white">
+      <nav>
+        <ul class="flex justify-center gap-8 text-sm">
+          <li>
+            <a href="#">Laman Utama</a>
+          </li>
+          <li><a href="#">Manuskrip</a></li>
+          <li>
+            <a href="#">Kesultanan</a>
+          </li>
+          <li><a href="#">Ulama</a></li>
+          <li>
+            <a href="#">Rujukan</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="relative">
+        <h1
+          class="absolute z-10 top-2/4 w-full font-bold text-4xl text-white text-center">
+          Portal <span class="text-[#efd76f]">Kesultanan</span> Terengganu
+        </h1>
+        <video autoplay muted loop class="w-full brightness-75">
+          <source src="assets/Main Comp.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section class="py-8">
+        <h2 class="text-center text-xl mb-4">Manuskrip</h2>
+        <div class="flex gap-4 justify-center flex-wrap w-[50rem] mx-auto">
+          <div class="bg-white p-4 hover:-translate-y-1">
+            <div class="max-w-[200px] max-h-32 mb-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+                alt="" />
+            </div>
+            <p>Hikayat Bayan Budiman</p>
+            <p class="text-xs text-gray-400">British Library</p>
+          </div>
+          <div class="bg-white p-4 hover:-translate-y-1">
+            <div class="max-w-[200px] max-h-32 mb-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+                alt="" />
+            </div>
+            <p>Hikayat Bayan Budiman</p>
+            <p class="text-xs text-gray-400">British Library</p>
+          </div>
+          <div class="bg-white p-4 hover:-translate-y-1">
+            <div class="max-w-[200px] max-h-32 mb-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+                alt="" />
+            </div>
+            <p>Hikayat Bayan Budiman</p>
+            <p class="text-xs text-gray-400">British Library</p>
+          </div>
+          <div>
+            <a href="#" class="text-sm text-gray-500">Lebih lanjut</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black px-4 py-6">
+      <p class="text-gray-400 text-sm text-center">© 2022 in development</p>
+    </footer>
+  </body>
+  <script>
+    let oldScrollY = window.scrollY;
+    let directionText = document.getElementsByTagName("body")[0];
+    const nav = document.getElementById("nav");
+
+    window.onscroll = function (e) {
+      const className = ["backdrop-brightness-50", "backdrop-blur-lg"];
+
+      if (oldScrollY < window.scrollY) {
+        className.forEach(el => {
+          nav.classList.add(el);
+        });
+      } else {
+        className.forEach(el => {
+          nav.classList.remove(el);
+        });
+      }
+
+      oldScrollY = window.scrollY;
+    };
+  </script>
+</html>
