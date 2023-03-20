@@ -7,94 +7,103 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Utama | Portal Kesultanan Terengganu</title>
   </head>
-  <body
-    class="relative min-h-screen grid grid-rows-[auto_1fr_auto] bg-slate-50">
-    <header id="nav" class="fixed top-0 w-full px-4 py-2 z-20 text-white">
-      <nav>
-        <ul class="flex justify-center gap-8 text-sm">
-          <li>
-            <a href="#">Laman Utama</a>
-          </li>
-          <li><a href="#">Manuskrip</a></li>
-          <li>
-            <a href="#">Kesultanan</a>
-          </li>
-          <li><a href="#">Ulama</a></li>
-          <li>
-            <a href="#">Rujukan</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-slate-50">
+    <header
+      class="px-4 py-3 bg-yellow-400 text-center flex items-center justify-center gap-3">
+      <img
+        class="w-12"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Coat_of_arms_of_Terengganu.svg/1200px-Coat_of_arms_of_Terengganu.svg.png"
+        alt="" />
+      <h1 class="text-2xl font-semibold">Portal Kesultanan Terengganu</h1>
     </header>
+    <nav class="sticky top-0 z-10 px-4 py-3 bg-yellow-400">
+      <ul class="flex justify-center gap-8 text-sm uppercase">
+        <li>
+          <a href="#">Laman Utama</a>
+        </li>
+        <li><a href="#">Manuskrip</a></li>
+        <li>
+          <a href="#">Kesultanan</a>
+        </li>
+        <li><a href="#">Ulama</a></li>
+        <li>
+          <a href="#">Rujukan</a>
+        </li>
+      </ul>
+    </nav>
     <main>
-      <div class="relative">
-        <h1
-          class="absolute z-10 top-2/4 w-full font-bold text-4xl text-white text-center">
-          Portal <span class="text-[#efd76f]">Kesultanan</span> Terengganu
-        </h1>
-        <video autoplay muted loop class="w-full brightness-75">
+      <div class="max-h-[50vh] overflow-hidden">
+        <video autoplay muted loop class="w-full">
           <source src="assets/Main Comp.mp4" type="video/mp4" />
         </video>
       </div>
-      <section class="py-8">
-        <h2 class="text-center text-xl mb-4">Manuskrip</h2>
-        <div class="flex gap-4 justify-center flex-wrap w-[50rem] mx-auto">
-          <div class="bg-white p-4 hover:-translate-y-1">
-            <div class="max-w-[200px] max-h-32 mb-2">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
-                alt="" />
+      <section class="py-9">
+        <h2 class="text-center text-2xl mb-4 font-semibold">Berita Semasa</h2>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <article class="bg-white hover:-translate-y-1 w-60 cursor-pointer">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+              alt=""
+              class="w-full" />
+            <div class="p-4">
+              <p class="font-semibold text-lg">Nafas baru bermula Ramadhan</p>
+              <p class="text-xs text-gray-400 mb-2">Mac 19</p>
+              <p class="overflow-hidden text-ellipsis text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                fugiat velit debitis exercitationem quisquam provident.
+              </p>
             </div>
-            <p>Hikayat Bayan Budiman</p>
-            <p class="text-xs text-gray-400">British Library</p>
-          </div>
-          <div class="bg-white p-4 hover:-translate-y-1">
-            <div class="max-w-[200px] max-h-32 mb-2">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
-                alt="" />
+          </article>
+          <article class="bg-white hover:-translate-y-1 w-60 cursor-pointer">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+              alt=""
+              class="w-full" />
+            <div class="p-4">
+              <p class="font-semibold text-lg">Nafas baru bermula Ramadhan</p>
+              <p class="text-xs text-gray-400 mb-2">Mac 19</p>
+              <p class="overflow-hidden text-ellipsis text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                fugiat velit debitis exercitationem quisquam provident.
+              </p>
             </div>
-            <p>Hikayat Bayan Budiman</p>
-            <p class="text-xs text-gray-400">British Library</p>
-          </div>
-          <div class="bg-white p-4 hover:-translate-y-1">
-            <div class="max-w-[200px] max-h-32 mb-2">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
-                alt="" />
+          </article>
+          <article class="bg-white hover:-translate-y-1 w-60 cursor-pointer">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNGasWM7EGtroRd8JC33bS8nHBso0GS7zIprnrkG3bg&s"
+              alt=""
+              class="w-full" />
+            <div class="p-4">
+              <p class="font-semibold text-lg">Nafas baru bermula Ramadhan</p>
+              <p class="text-xs text-gray-400 mb-2">Mac 19</p>
+              <p class="overflow-hidden text-ellipsis text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                fugiat velit debitis exercitationem quisquam provident.
+              </p>
             </div>
-            <p>Hikayat Bayan Budiman</p>
-            <p class="text-xs text-gray-400">British Library</p>
-          </div>
-          <div>
-            <a href="#" class="text-sm text-gray-500">Lebih lanjut</a>
-          </div>
+          </article>
+        </div>
+      </section>
+      <section class="relative py-9 bg-yellow-400">
+        <h2 class="text-center text-2xl mb-4 font-semibold">Galeri Info</h2>
+        <div class="gallery">
+          <img
+            src="https://assets.bharian.com.my/images/articles/mizanggg_1651467455.jpg"
+            alt="" />
+          <img
+            src="https://assets.hmetro.com.my/images/articles/wareh_HMfield_image_socialmedia.var_1660721540.jpg"
+            alt="" />
+          <img
+            src="https://static.wixstatic.com/media/4a3a30_5f776d4973ca4c0bac909a1af6a556c4~mv2.jpeg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1938307.jpeg"
+            alt="" />
+          <img
+            src="https://assets.nst.com.my/images/articles/ebsultanmizancats20_NSTfield_image_listing_featured.var_1563617646.jpg"
+            alt="" />
         </div>
       </section>
     </main>
-    <footer class="bg-black px-4 py-6">
-      <p class="text-gray-400 text-sm text-center">© 2022 in development</p>
+    <footer class="bg-black px-4 pt-20 pb-8">
+      <p class="text-white text-sm text-center">© 2022 in development</p>
     </footer>
   </body>
-  <script>
-    let oldScrollY = window.scrollY;
-    let directionText = document.getElementsByTagName("body")[0];
-    const nav = document.getElementById("nav");
-
-    window.onscroll = function (e) {
-      const className = ["backdrop-brightness-50", "backdrop-blur-lg"];
-
-      if (oldScrollY < window.scrollY) {
-        className.forEach(el => {
-          nav.classList.add(el);
-        });
-      } else {
-        className.forEach(el => {
-          nav.classList.remove(el);
-        });
-      }
-
-      oldScrollY = window.scrollY;
-    };
-  </script>
 </html>
