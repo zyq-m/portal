@@ -16,13 +16,15 @@
         alt="" />
       <h1 class="text-2xl font-semibold">Portal Kesultanan Terengganu</h1>
     </header>
-    <nav class="sticky top-0 z-10 px-4 py-3 bg-yellow-400">
+    <nav class="sticky top-0 z-10 px-4 bg-yellow-400">
       <ul class="flex justify-center gap-8 text-sm uppercase">
-        <li>
+        <li class="pb-3">
           <a href="../../">Laman Utama</a>
         </li>
-        <li><a href="index.html">Manuskrip</a></li>
-        <li class="relative dropdown">
+        <li class="pb-3 border-b border-black">
+          <a href="index.html">Manuskrip</a>
+        </li>
+        <li class="pb-3 relative dropdown">
           <a href="#">Kesultanan</a>
           <div class="dropdown-content hidden">
             <ul class="absolute grid gap-3 w-36 px-4 py-3 bg-yellow-400">
@@ -32,17 +34,19 @@
             </ul>
           </div>
         </li>
-        <li><a href="#">Ulama</a></li>
-        <li>
+        <li class="pb-3"><a href="#">Ulama</a></li>
+        <li class="pb-3">
           <a href="#">Rujukan</a>
         </li>
       </ul>
     </nav>
     <main class="manuskrip w-fit mx-auto mt-6">
-      <nav class="sticky top-16 mt-16 max-w-[193px] h-min">
+      <nav id="sidenav" class="sticky top-16 mt-16 max-w-[193px] h-min">
         <h3 class="mb-4 font-medium text-gray-500">Manuskrip</h3>
         <ul class="flex flex-col gap-4 text-gray-400">
-          <li class="text-black font-semibold">Sastera Kitab</li>
+          <li class="text-black font-semibold">
+            <a href="#">Sastera Kitab</a>
+          </li>
           <li><a href="#">Umum</a></li>
         </ul>
         <h3 class="mt-6 mb-4 font-medium text-gray-500">Dokumen</h3>
@@ -369,4 +373,21 @@
       <p class="text-white text-sm text-center">© 2022 in development</p>
     </footer>
   </body>
+  <script src="../../index.js"></script>
+  <script>
+    const sideNav = document.getElementById("sidenav");
+    let liArr = [];
+    const active = ["text-black", "font-semibold"];
+
+    let array = sideNav.children;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].tagName == "UL") {
+        for (let k = 0; k < array[i].children.length; k++) {
+          liArr.push(array[i].children[k]);
+        }
+      }
+    }
+
+    activeNavbar(liArr, active);
+  </script>
 </html>
